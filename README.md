@@ -8,8 +8,9 @@
   app.set("view engine", "ejs");
 
 - mongoose (npm i mongoose)
+  mongoose.connect("mongodb://localhost:27017/wikiDB", {useNewUrlParser: true});
 
-- in mongo shell
+  in mongo shell
 
   show dbs use queuelistDB  
   show collections  
