@@ -8,4 +8,9 @@
   app.set("view engine", "ejs");
 
 - mongoose (npm i mongoose)
-  mongoose.connect("mongodb://localhost:27017/wikiDB", {useNewUrlParser: true});
+  mongoose.connect("mongodb://localhost:27017/userDB", {useNewUrlParser: true});
+
+#1 Level1
+
+- mongoose-encyption (npm i mongoose-encryption)
+  Simple encryption and authentication for mongoose documents.
