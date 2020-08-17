@@ -31,3 +31,17 @@ Using environment variables
 
 - md5 (npm i md5)
   a JavaScript function for hashing messages with MD5.
+
+# Level4 Hashing & Salting
+
+- bcrypt (npm i bcrypt)
+  bcrypt is a password-hashing function
+  It uses a 128-bit salt and encrypts a 192-bit magic value as noted in the USENIX documentation. "bcrypt" foces you to follow security best practices as it requires a salt as part of the hashing process.
+
+  Node Version Manager
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+  nvm --version
+
+  const saltRounds = 10;
+  bcrypt.hash(myPlaintextPassword, saltRounds, function(err, hash){})
+  bcrypt.compare(myPlaintextPassword, hash, function(err, result) {})
