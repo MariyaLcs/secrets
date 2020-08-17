@@ -12,12 +12,12 @@
 
   mongoose.connect("mongodb://localhost:27017/userDB", {useNewUrlParser: true});
 
-# Level2
+# Level2 Environment variables
 
 - mongoose-encyption (npm i mongoose-encryption)
   Simple encryption and authentication for mongoose documents.
 
-# Using environment variables
+Using environment variables
 
 - dotenv (npm i dotenv)
   Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env
@@ -26,3 +26,8 @@
   .env
   secret-->process.env.SECRET
   node.gitignore
+
+# Level3 Hashing
+
+- md5 (npm i md5)
+  a JavaScript function for hashing messages with MD5.
