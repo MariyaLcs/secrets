@@ -59,3 +59,12 @@ Using environment variables
   passport.use(User.createStrategy());
   passport.serializeUser(User.serializeUser());
   passport.deserializeUser(User.deserializeUser());
+
+# Level6 OAuth2.0
+
+- passport-google-oauth20 (npm install passport-google-oauth20)
+  This module lets you authenticate using Google in your Node.js applications.
+
+  https://console.developers.google.com/
+
+  # Social Buttons for Bootstrap
