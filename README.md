@@ -45,3 +45,17 @@ Using environment variables
   const saltRounds = 10;
   bcrypt.hash(myPlaintextPassword, saltRounds, function(err, hash){})
   bcrypt.compare(myPlaintextPassword, hash, function(err, result) {})
+
+# Level5 Passport.js
+
+- npm i passport passport-local passport-local-mongoose express-session
+
+  app.use(session({secret: "Our little secret", resave: false,saveUninitialized: false,}));
+  app.use(passport.initialize());
+  app.use(passport.session());
+
+  userSchema.plugin(passportLocalMongoose);
+
+  passport.use(User.createStrategy());
+  passport.serializeUser(User.serializeUser());
+  passport.deserializeUser(User.deserializeUser());
